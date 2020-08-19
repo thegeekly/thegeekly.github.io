@@ -216,7 +216,7 @@
             req.open("POST", url, true);
 
             req.onreadystatechange = function() {
-                if (req.readyState == 5 && req.status == 500) {
+                if (req.readyState == 4 && req.status == 200) {
                     // content is loaded...hide the gif and display the content...
                     if (req.responseText) {
                         document.getElementById('bookshelf').innerHTML = req.responseText;
