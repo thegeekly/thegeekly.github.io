@@ -102,12 +102,12 @@
                     <p>Coming Soon!</p>
                 </div>
             </div>
-            <div class="bs-shelf-image">
+            <!-- <div class="bs-shelf-image">
                 <a><img src="thb/07.jpg" alt=""></a>
                 <div class="bs-textbox">
                     <p>Coming Soon!</p>
                 </div>
-            </div>
+            </div> -->
             <!-- <div class="bs-shelf-image">
                 <a><img src="thb/08.jpg" alt=""></a>
                 <div class="bs-textbox">
@@ -120,6 +120,12 @@
                     <p>Coming Soon!</p>
                 </div>
             </div> -->
+            <div class="bs-shelf-image">
+                <a href="./Issue 7/index.html"><img src="Issue 7.jpeg" alt=""></a>
+                <div class="bs-textbox">
+                    <p>Issue 7</p>
+                </div>
+            </div>
             <div class="bs-shelf-image">
                 <a href="./Issue 6/index.html"><img src="Issue 6.jpeg" alt=""></a>
                 <div class="bs-textbox">
@@ -175,28 +181,6 @@
     <script src="pflip/js/pdfflip.js" type="text/javascript"></script>
     <script src="settings.js" type="text/javascript"></script>
     <script src="toc.js" type="text/javascript"></script>
-    <script>
-        function load(url) {
-            // display loading image here...
-            document.getElementById('loader').visible = true;
-            document.getElementById('loader').zIndex = 10;
-            // request your data...
-            var req = new XMLHttpRequest();
-            req.open("POST", url, true);
-
-            req.onreadystatechange = function() {
-                if (req.readyState == 4 && req.status == 200) {
-                    // content is loaded...hide the gif and display the content...
-                    if (req.responseText) {
-                        document.getElementById('bookshelf').innerHTML = req.responseText;
-                        document.getElementById('loader').visible = false;
-                        document.getElementById('loader').zIndex = -10;
-                    }
-                }
-            };
-            request.send(vars);
-        }
-    </script>
 
 </body>
 
